@@ -1,0 +1,63 @@
+import { randomUUID } from "crypto";
+
+export const events = [
+  {
+    id: randomUUID(),
+    title: "Tech Conference 2024",
+    description: "A conference for tech enthusiasts.",
+    image: "tech-conference.jpg",
+    date: new Date("2024-11-20"),
+    location: "New York City",
+    totalPlaces: 500,
+    bookedPlaces: 450,
+    participationFee: 150.0,
+    hostedBy: {
+      id: randomUUID(),
+      name: "Tech Corp",
+      address: {
+        street: "Innovation Drive",
+        houseNumber: "400",
+        zipIndex: "94043",
+        city: "Mountain View",
+        country: "USA",
+      },
+      email: "contact@techcorp.com",
+      contactPhone: "+1-650-555-0000",
+    },
+  },
+  {
+    id: randomUUID(),
+    title: "Music Festival",
+    description: "An outdoor music festival with various artists.",
+    image: "music-festival.jpg",
+    date: new Date("2024-08-15"),
+    location: "Los Angeles",
+    totalPlaces: 2000,
+    bookedPlaces: 1800,
+    participationFee: 75.0,
+  },
+  {
+    id: randomUUID(),
+    title: "Startup Workshop",
+    description: "A workshop for budding entrepreneurs.",
+    image: "startup-workshop.jpg",
+    date: new Date("2024-05-10"),
+    location: "London",
+    totalPlaces: 150,
+    bookedPlaces: 120,
+    participationFee: 50.0,
+    hostedBy: {
+      id: randomUUID(),
+      name: "Global Solutions",
+      address: {
+        street: "Queen Street",
+        houseNumber: "123",
+        zipIndex: "M5H 2N2",
+        city: "Toronto",
+        country: "Canada",
+      },
+      email: "info@globalsolutions.ca",
+      contactPhone: "+1-416-555-0198",
+    },
+  },
+];
