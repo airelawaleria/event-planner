@@ -3,24 +3,18 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-  --accent-color: #78cdd7;
-  --primary-color: #0d5c63;
-  --secondary-color: #247b7b;
-  --tertiary-color: #44a1a0;
-  --powder-white-color: #fffffa;
-  --grey-color: #8b8c89;
-  --dark-grey-color: #3b3b3b;
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
 
 @layer base {
+  * {
+    @apply box-border;
+  }
+
   body {
+    @apply bg-primary-surface text-white;
   }
 }

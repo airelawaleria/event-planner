@@ -11,13 +11,12 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        accent: "var(--accent-color)",
-        primary: "var(--primary-color)",
-        secondary: "var(--secondary-color)",
-        tertiary: "var(--tertiary-color)",
-        "powder-white": "var(--powder-white-color)",
-        grey: "var(--grey-color)",
-        "dark-grey": "var(--dark-grey-color)",
+        primary: "#ba68c8",
+        "primary-hover": "#5b2c65",
+        secondary: "#e1bde8",
+        "secondary-hover": "#72407A",
+        "primary-surface": "#2A373E",
+        "secondary-surface": "#374751",
       },
     },
   },
